@@ -1,0 +1,41 @@
+.card-container {
+	height: 60px;
+	// background-color: #573957;
+	display: flex;
+	font-size: 14px;
+	gap: 10px;
+	width: 100%;
+
+	color: white;
+	.image {
+		padding-left: 20px;
+		display: flex;
+		align-items: center;
+		img {
+			width: 50px;
+			border-radius: 50px;
+		}
+	}
+	.text {
+		padding-right: 20px;
+		width: 100%;
+        border-bottom: 1px solid gray;
+		.check {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+		// justify-self: start;
+		&-top {
+			margin-top: 5px;
+			align-items: start;
+			width: 100%;
+			
+			display: flex;
+			justify-content: space-between;
+		}
+        .message{
+            color: gray;
+        }
+	}
+}
