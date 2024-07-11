@@ -3,13 +3,6 @@ import ChatCard from '../../components/chat-card/ChatCard'
 import { useContacts } from '../../hooks/useContacts'
 import './HomePage.scss'
 
-const words = [
-	{ word: 'apple', translation: 'manzana' },
-	{ word: 'book', translation: 'libro' },
-	{ word: 'car', translation: 'coche' },
-	{ word: 'dog', translation: 'perro' },
-	{ word: 'elephant', translation: 'elefante' },
-]
 const HomePage = () => {
 	const { data } = useContacts('aOKXSmCVqHydL0dbH8xl')
 	console.log(data)
