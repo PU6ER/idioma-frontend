@@ -8,38 +8,28 @@
 	background-color: #344856;
 	padding: 10px 0;
 	color: white;
-	&-first {
+	&__first {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		font-weight: 600;
 		padding: 0 20px;
-		button{
+		button {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
+			font-size: 16px;
 			background: transparent;
 			outline: none;
 			border: none;
 
 			color: #57a8f5;
 		}
-		.adjust {
-			display: flex;
-			align-items: center;
-			// gap: px;
-		}
 	}
-	&-badge {
+	&__adjust {
 		display: flex;
-		gap: 5px;
 		align-items: center;
-		color: white;
-		img {
-			width: 32px;
-			border: 2px solid white;
-			border-radius: 8px;
-		}
+		// gap: px;
 	}
 }
 .hero {

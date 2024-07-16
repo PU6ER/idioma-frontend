@@ -1,18 +1,15 @@
 import { CirclePlus, PencilLine } from 'lucide-react'
 import ChatCard from '../../components/chat-card/ChatCard'
-import { useContacts } from '../../hooks/useContacts'
 import './HomePage.scss'
 
 const HomePage = () => {
-	const { data } = useContacts('aOKXSmCVqHydL0dbH8xl')
-	console.log(data)
 	return (
 		<div>
 			<div className='topbar'>
-				<div className='topbar-first'>
-					<button className='change'>Изм.</button>
+				<div className='topbar__first'>
+					<button className='topbar__add-btn'>Изм.</button>
 					<span>Чаты</span>
-					<div className='adjust'>
+					<div className='topbar__adjust'>
 						<button>
 							<CirclePlus />
 						</button>
