@@ -3,7 +3,7 @@ import { getProfile } from '../services/firebase/firebaseService'
 
 export function useProfile(userId: string) {
 	const { data, isLoading, isSuccess } = useQuery({
-		queryKey: ['profile'],
+		queryKey: ['profile', userId],
 		queryFn: () => getProfile(userId),
 	})
 	return { data, isLoading, isSuccess }
