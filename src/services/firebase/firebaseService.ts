@@ -29,7 +29,7 @@ export async function getProfile(userId: string): Promise<IUser> {
 	try {
 		const docSnapshot = await getDoc(docRef)
 		if (docSnapshot.exists()) {
-			return { ...docSnapshot.data() } as IUser
+			return { id: docSnapshot.id, ...docSnapshot.data() } as IUser
 		} else {
 			console.log('No such document!')
 			return {
